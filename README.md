@@ -6,7 +6,7 @@ iOS 下的弹出视图。支持iPhone/iPad
 
 ## 使用方法
 
-弹出视图
+* 弹出视图
 
 ```
 PopupView *view = [PopupView defaultPopupView];
@@ -17,7 +17,7 @@ NSLog(@"动画结束");
 }];
 ```
 
-视图消失
+* 视图消失
 
 ```
 [_parentVC lew_dismissPopupView];

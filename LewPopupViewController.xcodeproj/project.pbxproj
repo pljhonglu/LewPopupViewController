@@ -1,0 +1,485 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9F1A6F221AA7FCFC0094291E /* PopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1A6F211AA7FCFC0094291E /* PopupView.m */; };
+		9F1A6F241AA7FD0F0094291E /* PopupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F1A6F231AA7FD0F0094291E /* PopupView.xib */; };
+		9F1A6F3B1AA821C80094291E /* LewPopupBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1A6F301AA821C80094291E /* LewPopupBackgroundView.m */; };
+		9F1A6F3C1AA821C80094291E /* LewPopupViewAnimationDrop.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1A6F321AA821C80094291E /* LewPopupViewAnimationDrop.m */; };
+		9F1A6F3D1AA821C80094291E /* LewPopupViewAnimationFade.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1A6F341AA821C80094291E /* LewPopupViewAnimationFade.m */; };
+		9F1A6F3E1AA821C80094291E /* LewPopupViewAnimationSlide.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1A6F361AA821C80094291E /* LewPopupViewAnimationSlide.m */; };
+		9F1A6F3F1AA821C80094291E /* LewPopupViewAnimationSpring.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1A6F381AA821C80094291E /* LewPopupViewAnimationSpring.m */; };
+		9F1A6F401AA821C80094291E /* UIViewController+LewPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1A6F3A1AA821C80094291E /* UIViewController+LewPopupViewController.m */; };
+		FEBE323A1AA730E300388977 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FEBE32391AA730E300388977 /* main.m */; };
+		FEBE323D1AA730E300388977 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FEBE323C1AA730E300388977 /* AppDelegate.m */; };
+		FEBE32401AA730E300388977 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEBE323F1AA730E300388977 /* ViewController.m */; };
+		FEBE32431AA730E300388977 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEBE32411AA730E300388977 /* Main.storyboard */; };
+		FEBE32451AA730E300388977 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEBE32441AA730E300388977 /* Images.xcassets */; };
+		FEBE32481AA730E300388977 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEBE32461AA730E300388977 /* LaunchScreen.xib */; };
+		FEBE32541AA730E300388977 /* LewPopupViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FEBE32531AA730E300388977 /* LewPopupViewControllerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FEBE324E1AA730E300388977 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEBE322C1AA730E300388977 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FEBE32331AA730E300388977;
+			remoteInfo = LewPopupViewController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9F1A6F201AA7FCFC0094291E /* PopupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopupView.h; sourceTree = "<group>"; };
+		9F1A6F211AA7FCFC0094291E /* PopupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopupView.m; sourceTree = "<group>"; };
+		9F1A6F231AA7FD0F0094291E /* PopupView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopupView.xib; sourceTree = "<group>"; };
+		9F1A6F2F1AA821C80094291E /* LewPopupBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LewPopupBackgroundView.h; sourceTree = "<group>"; };
+		9F1A6F301AA821C80094291E /* LewPopupBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LewPopupBackgroundView.m; sourceTree = "<group>"; };
+		9F1A6F311AA821C80094291E /* LewPopupViewAnimationDrop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LewPopupViewAnimationDrop.h; sourceTree = "<group>"; };
+		9F1A6F321AA821C80094291E /* LewPopupViewAnimationDrop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LewPopupViewAnimationDrop.m; sourceTree = "<group>"; };
+		9F1A6F331AA821C80094291E /* LewPopupViewAnimationFade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LewPopupViewAnimationFade.h; sourceTree = "<group>"; };
+		9F1A6F341AA821C80094291E /* LewPopupViewAnimationFade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LewPopupViewAnimationFade.m; sourceTree = "<group>"; };
+		9F1A6F351AA821C80094291E /* LewPopupViewAnimationSlide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LewPopupViewAnimationSlide.h; sourceTree = "<group>"; };
+		9F1A6F361AA821C80094291E /* LewPopupViewAnimationSlide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LewPopupViewAnimationSlide.m; sourceTree = "<group>"; };
+		9F1A6F371AA821C80094291E /* LewPopupViewAnimationSpring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LewPopupViewAnimationSpring.h; sourceTree = "<group>"; };
+		9F1A6F381AA821C80094291E /* LewPopupViewAnimationSpring.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LewPopupViewAnimationSpring.m; sourceTree = "<group>"; };
+		9F1A6F391AA821C80094291E /* UIViewController+LewPopupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LewPopupViewController.h"; sourceTree = "<group>"; };
+		9F1A6F3A1AA821C80094291E /* UIViewController+LewPopupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LewPopupViewController.m"; sourceTree = "<group>"; };
+		FEBE32341AA730E300388977 /* LewPopupViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LewPopupViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEBE32381AA730E300388977 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEBE32391AA730E300388977 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FEBE323B1AA730E300388977 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FEBE323C1AA730E300388977 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FEBE323E1AA730E300388977 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FEBE323F1AA730E300388977 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FEBE32421AA730E300388977 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FEBE32441AA730E300388977 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FEBE32471AA730E300388977 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		FEBE324D1AA730E300388977 /* LewPopupViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LewPopupViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEBE32521AA730E300388977 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEBE32531AA730E300388977 /* LewPopupViewControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LewPopupViewControllerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FEBE32311AA730E300388977 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEBE324A1AA730E300388977 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9F1A6F2E1AA821C80094291E /* popupViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9F1A6F2F1AA821C80094291E /* LewPopupBackgroundView.h */,
+				9F1A6F301AA821C80094291E /* LewPopupBackgroundView.m */,
+				9F1A6F311AA821C80094291E /* LewPopupViewAnimationDrop.h */,
+				9F1A6F321AA821C80094291E /* LewPopupViewAnimationDrop.m */,
+				9F1A6F331AA821C80094291E /* LewPopupViewAnimationFade.h */,
+				9F1A6F341AA821C80094291E /* LewPopupViewAnimationFade.m */,
+				9F1A6F351AA821C80094291E /* LewPopupViewAnimationSlide.h */,
+				9F1A6F361AA821C80094291E /* LewPopupViewAnimationSlide.m */,
+				9F1A6F371AA821C80094291E /* LewPopupViewAnimationSpring.h */,
+				9F1A6F381AA821C80094291E /* LewPopupViewAnimationSpring.m */,
+				9F1A6F391AA821C80094291E /* UIViewController+LewPopupViewController.h */,
+				9F1A6F3A1AA821C80094291E /* UIViewController+LewPopupViewController.m */,
+			);
+			path = popupViewController;
+			sourceTree = "<group>";
+		};
+		FEBE322B1AA730E300388977 = {
+			isa = PBXGroup;
+			children = (
+				9F1A6F2E1AA821C80094291E /* popupViewController */,
+				FEBE32361AA730E300388977 /* LewPopupViewController */,
+				FEBE32501AA730E300388977 /* LewPopupViewControllerTests */,
+				FEBE32351AA730E300388977 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FEBE32351AA730E300388977 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FEBE32341AA730E300388977 /* LewPopupViewController.app */,
+				FEBE324D1AA730E300388977 /* LewPopupViewControllerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FEBE32361AA730E300388977 /* LewPopupViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FEBE323B1AA730E300388977 /* AppDelegate.h */,
+				FEBE323C1AA730E300388977 /* AppDelegate.m */,
+				FEBE323E1AA730E300388977 /* ViewController.h */,
+				FEBE323F1AA730E300388977 /* ViewController.m */,
+				FEBE32411AA730E300388977 /* Main.storyboard */,
+				9F1A6F201AA7FCFC0094291E /* PopupView.h */,
+				9F1A6F211AA7FCFC0094291E /* PopupView.m */,
+				9F1A6F231AA7FD0F0094291E /* PopupView.xib */,
+				FEBE32441AA730E300388977 /* Images.xcassets */,
+				FEBE32461AA730E300388977 /* LaunchScreen.xib */,
+				FEBE32371AA730E300388977 /* Supporting Files */,
+			);
+			path = LewPopupViewController;
+			sourceTree = "<group>";
+		};
+		FEBE32371AA730E300388977 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FEBE32381AA730E300388977 /* Info.plist */,
+				FEBE32391AA730E300388977 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FEBE32501AA730E300388977 /* LewPopupViewControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				FEBE32531AA730E300388977 /* LewPopupViewControllerTests.m */,
+				FEBE32511AA730E300388977 /* Supporting Files */,
+			);
+			path = LewPopupViewControllerTests;
+			sourceTree = "<group>";
+		};
+		FEBE32511AA730E300388977 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FEBE32521AA730E300388977 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FEBE32331AA730E300388977 /* LewPopupViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEBE32571AA730E300388977 /* Build configuration list for PBXNativeTarget "LewPopupViewController" */;
+			buildPhases = (
+				FEBE32301AA730E300388977 /* Sources */,
+				FEBE32311AA730E300388977 /* Frameworks */,
+				FEBE32321AA730E300388977 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LewPopupViewController;
+			productName = LewPopupViewController;
+			productReference = FEBE32341AA730E300388977 /* LewPopupViewController.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FEBE324C1AA730E300388977 /* LewPopupViewControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEBE325A1AA730E300388977 /* Build configuration list for PBXNativeTarget "LewPopupViewControllerTests" */;
+			buildPhases = (
+				FEBE32491AA730E300388977 /* Sources */,
+				FEBE324A1AA730E300388977 /* Frameworks */,
+				FEBE324B1AA730E300388977 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FEBE324F1AA730E300388977 /* PBXTargetDependency */,
+			);
+			name = LewPopupViewControllerTests;
+			productName = LewPopupViewControllerTests;
+			productReference = FEBE324D1AA730E300388977 /* LewPopupViewControllerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FEBE322C1AA730E300388977 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = pljhonglu;
+				TargetAttributes = {
+					FEBE32331AA730E300388977 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					FEBE324C1AA730E300388977 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = FEBE32331AA730E300388977;
+					};
+				};
+			};
+			buildConfigurationList = FEBE322F1AA730E300388977 /* Build configuration list for PBXProject "LewPopupViewController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FEBE322B1AA730E300388977;
+			productRefGroup = FEBE32351AA730E300388977 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FEBE32331AA730E300388977 /* LewPopupViewController */,
+				FEBE324C1AA730E300388977 /* LewPopupViewControllerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FEBE32321AA730E300388977 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEBE32431AA730E300388977 /* Main.storyboard in Resources */,
+				FEBE32481AA730E300388977 /* LaunchScreen.xib in Resources */,
+				9F1A6F241AA7FD0F0094291E /* PopupView.xib in Resources */,
+				FEBE32451AA730E300388977 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEBE324B1AA730E300388977 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FEBE32301AA730E300388977 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEBE32401AA730E300388977 /* ViewController.m in Sources */,
+				9F1A6F401AA821C80094291E /* UIViewController+LewPopupViewController.m in Sources */,
+				9F1A6F3B1AA821C80094291E /* LewPopupBackgroundView.m in Sources */,
+				9F1A6F3C1AA821C80094291E /* LewPopupViewAnimationDrop.m in Sources */,
+				9F1A6F3D1AA821C80094291E /* LewPopupViewAnimationFade.m in Sources */,
+				FEBE323D1AA730E300388977 /* AppDelegate.m in Sources */,
+				9F1A6F221AA7FCFC0094291E /* PopupView.m in Sources */,
+				FEBE323A1AA730E300388977 /* main.m in Sources */,
+				9F1A6F3F1AA821C80094291E /* LewPopupViewAnimationSpring.m in Sources */,
+				9F1A6F3E1AA821C80094291E /* LewPopupViewAnimationSlide.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEBE32491AA730E300388977 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEBE32541AA730E300388977 /* LewPopupViewControllerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FEBE324F1AA730E300388977 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FEBE32331AA730E300388977 /* LewPopupViewController */;
+			targetProxy = FEBE324E1AA730E300388977 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FEBE32411AA730E300388977 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FEBE32421AA730E300388977 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FEBE32461AA730E300388977 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FEBE32471AA730E300388977 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FEBE32551AA730E300388977 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FEBE32561AA730E300388977 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FEBE32581AA730E300388977 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LewPopupViewController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FEBE32591AA730E300388977 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LewPopupViewController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FEBE325B1AA730E300388977 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LewPopupViewControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LewPopupViewController.app/LewPopupViewController";
+			};
+			name = Debug;
+		};
+		FEBE325C1AA730E300388977 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LewPopupViewControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LewPopupViewController.app/LewPopupViewController";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FEBE322F1AA730E300388977 /* Build configuration list for PBXProject "LewPopupViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEBE32551AA730E300388977 /* Debug */,
+				FEBE32561AA730E300388977 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEBE32571AA730E300388977 /* Build configuration list for PBXNativeTarget "LewPopupViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEBE32581AA730E300388977 /* Debug */,
+				FEBE32591AA730E300388977 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEBE325A1AA730E300388977 /* Build configuration list for PBXNativeTarget "LewPopupViewControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEBE325B1AA730E300388977 /* Debug */,
+				FEBE325C1AA730E300388977 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FEBE322C1AA730E300388977 /* Project object */;
+}

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z3T-9P-8qr">
+                                <rect key="frame" x="24" y="80" width="568" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="1jd-nF-ed2"/>
+                                </constraints>
+                                <state key="normal" title="popupView fade">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="popupViewFadeAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3bc-Qt-gc4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XQH-rt-ZVe">
+                                <rect key="frame" x="24" y="118" width="568" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3iA-W9-Rli"/>
+                                </constraints>
+                                <state key="normal" title="popupView slide">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="popupViewSlideAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g9l-Pb-8KG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B8h-Hf-KxA">
+                                <rect key="frame" x="24" y="156" width="568" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="dq9-Hj-pDN"/>
+                                </constraints>
+                                <state key="normal" title="popupView spring">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="popupViewSpringAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CQI-rs-7Hh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VmH-Go-69P">
+                                <rect key="frame" x="24" y="194" width="568" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="aMM-ku-woO"/>
+                                </constraints>
+                                <state key="normal" title="popupView drop">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="popupViewDropAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8MT-Qo-iiG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XQH-rt-ZVe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="0XI-a5-Hre"/>
+                            <constraint firstItem="B8h-Hf-KxA" firstAttribute="top" secondItem="XQH-rt-ZVe" secondAttribute="bottom" constant="8" id="3Bm-C5-TdW"/>
+                            <constraint firstItem="z3T-9P-8qr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="5Sl-ef-vlL"/>
+                            <constraint firstItem="z3T-9P-8qr" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" constant="8" id="CzW-va-Zy4"/>
+                            <constraint firstItem="XQH-rt-ZVe" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" constant="8" id="EAV-b6-l7O"/>
+                            <constraint firstItem="XQH-rt-ZVe" firstAttribute="top" secondItem="z3T-9P-8qr" secondAttribute="bottom" constant="8" id="Ygp-6W-SIp"/>
+                            <constraint firstItem="B8h-Hf-KxA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="brj-aJ-ezx"/>
+                            <constraint firstItem="VmH-Go-69P" firstAttribute="top" secondItem="B8h-Hf-KxA" secondAttribute="bottom" constant="8" id="dAg-yX-2HP"/>
+                            <constraint firstItem="VmH-Go-69P" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="gPM-rG-xa1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VmH-Go-69P" secondAttribute="trailing" constant="-8" id="isa-hs-jTx"/>
+                            <constraint firstItem="z3T-9P-8qr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="vYy-5c-72V"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="B8h-Hf-KxA" secondAttribute="trailing" constant="-8" id="xLN-Zx-i56"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

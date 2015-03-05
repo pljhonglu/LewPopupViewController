@@ -2,6 +2,8 @@
 
 iOS 下的弹出视图。支持iPhone/iPad
 
+![效果图](https://github.com/pljhonglu/LewPopupViewController/blob/master/images/default.gif)
+
 ## 使用方法
 
 弹出视图

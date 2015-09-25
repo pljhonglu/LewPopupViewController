@@ -7,11 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "UIViewController+LewPopupViewController.h"
-#import "LewPopupViewAnimationFade.h"
-#import "LewPopupViewAnimationSlide.h"
-#import "LewPopupViewAnimationSpring.h"
-#import "LewPopupViewAnimationDrop.h"
+#import "LewPopupViewController.h"
 #import "PopupView.h"
 
 @interface ViewController ()

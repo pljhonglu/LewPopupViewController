@@ -50,6 +50,7 @@
 		9F1A6F381AA821C80094291E /* LewPopupViewAnimationSpring.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LewPopupViewAnimationSpring.m; sourceTree = "<group>"; };
 		9F1A6F391AA821C80094291E /* UIViewController+LewPopupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LewPopupViewController.h"; sourceTree = "<group>"; };
 		9F1A6F3A1AA821C80094291E /* UIViewController+LewPopupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LewPopupViewController.m"; sourceTree = "<group>"; };
+		FEA5B97C1BB520A2003C9F95 /* LewPopupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LewPopupViewController.h; sourceTree = "<group>"; };
 		FEBE32341AA730E300388977 /* LewPopupViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LewPopupViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEBE32381AA730E300388977 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FEBE32391AA730E300388977 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -86,6 +87,7 @@
 		9F1A6F2E1AA821C80094291E /* popupViewController */ = {
 			isa = PBXGroup;
 			children = (
+				FEA5B97C1BB520A2003C9F95 /* LewPopupViewController.h */,
 				9F1A6F2F1AA821C80094291E /* LewPopupBackgroundView.h */,
 				9F1A6F301AA821C80094291E /* LewPopupBackgroundView.m */,
 				9F1A6F311AA821C80094291E /* LewPopupViewAnimationDrop.h */,

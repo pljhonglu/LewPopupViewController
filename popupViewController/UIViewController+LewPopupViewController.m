@@ -85,6 +85,11 @@
     // check if source view controller is not in destination
     if ([self.lewOverlayView.subviews containsObject:popupView]) return;
     
+    // fix issue #2
+    if (self.lewOverlayView && self.lewOverlayView.subviews.count > 1) {
+        [self dismissPopupViewWithAnimation:nil];
+    }
+    
     self.lewPopupView = nil;
     self.lewPopupView = popupView;
     self.lewPopupAnimation = nil;

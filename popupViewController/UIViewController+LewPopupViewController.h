@@ -26,3 +26,9 @@
 - (void)lew_dismissPopupView;
 - (void)lew_dismissPopupViewWithanimation:(id<LewPopupAnimation>)animation;
 @end
+
+#pragma mark - 
+@interface UIView (lewPopupViewController)
+@property (nonatomic, weak, readonly) UIViewController *lewPopupViewController;
+
+@end

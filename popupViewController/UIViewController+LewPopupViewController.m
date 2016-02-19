@@ -15,9 +15,14 @@
 #define kLEWOverlayView @"kLEWOverlayView"
 #define kLEWPopupViewDismissedBlock @"kLEWPopupViewDismissedBlock"
 #define KLEWPopupAnimation @"KLEWPopupAnimation"
+#define kLEWPopupViewController @"kLEWPopupViewController"
 
 #define kLEWPopupViewTag 8002
 #define kLEWOverlayViewTag 8003
+
+@interface UIView (LewPopupViewControllerPrivate)
+@property (nonatomic, weak, readwrite) UIViewController *lewPopupViewController;
+@end
 
 @interface UIViewController (LewPopupViewControllerPrivate)
 @property (nonatomic, retain) UIView *lewPopupView;
@@ -177,5 +182,15 @@
     return recentView.view;
 }
 
+@end
 
+#pragma mark - UIView+LewPopupView
+@implementation UIView (lewPopupViewController)
+- (UIViewController *)lewPopupViewController {
+    return objc_getAssociatedObject(self, kLEWPopupViewController);
+}
+
+- (void)setLewPopupViewController:(UIViewController * _Nullable)lewPopupViewController {
+    objc_setAssociatedObject(self, kLEWPopupViewController, lewPopupViewController, OBJC_ASSOCIATION_ASSIGN);
+}
 @end

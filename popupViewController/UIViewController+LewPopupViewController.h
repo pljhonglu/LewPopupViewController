@@ -20,8 +20,12 @@
 @property (nonatomic, retain, readonly) UIView *lewOverlayView;
 @property (nonatomic, retain, readonly) id<LewPopupAnimation> lewPopupAnimation;
 
+// default click background to disappear
 - (void)lew_presentPopupView:(UIView *)popupView animation:(id<LewPopupAnimation>)animation;
 - (void)lew_presentPopupView:(UIView *)popupView animation:(id<LewPopupAnimation>)animation dismissed:(void(^)(void))dismissed;
+
+- (void)lew_presentPopupView:(UIView *)popupView animation:(id<LewPopupAnimation>)animation backgroundClickable:(BOOL)clickable;
+- (void)lew_presentPopupView:(UIView *)popupView animation:(id<LewPopupAnimation>)animation backgroundClickable:(BOOL)clickable dismissed:(void(^)(void))dismissed;
 
 - (void)lew_dismissPopupView;
 - (void)lew_dismissPopupViewWithanimation:(id<LewPopupAnimation>)animation;

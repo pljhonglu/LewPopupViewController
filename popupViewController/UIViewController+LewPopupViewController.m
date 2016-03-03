@@ -35,12 +35,21 @@
 @implementation UIViewController (LewPopupViewController)
 
 #pragma public method
-- (void)lew_presentPopupView:(UIView *)popupView animation:(id<LewPopupAnimation>)animation dismissed:(void (^)(void))dismissed{
-    [self presentPopupView:popupView animation:animation dismissed:dismissed];
-}
 
 - (void)lew_presentPopupView:(UIView *)popupView animation:(id<LewPopupAnimation>)animation{
-    [self presentPopupView:popupView animation:animation dismissed:nil];
+    [self presentPopupView:popupView animation:animation backgroundClickable:YES dismissed:nil];
+}
+
+- (void)lew_presentPopupView:(UIView *)popupView animation:(id<LewPopupAnimation>)animation dismissed:(void (^)(void))dismissed{
+    [self presentPopupView:popupView animation:animation backgroundClickable:YES dismissed:dismissed];
+}
+
+- (void)lew_presentPopupView:(UIView *)popupView animation:(id<LewPopupAnimation>)animation backgroundClickable:(BOOL)clickable{
+    [self presentPopupView:popupView animation:animation backgroundClickable:clickable dismissed:nil];
+}
+
+- (void)lew_presentPopupView:(UIView *)popupView animation:(id<LewPopupAnimation>)animation backgroundClickable:(BOOL)clickable dismissed:(void (^)(void))dismissed{
+    [self presentPopupView:popupView animation:animation backgroundClickable:clickable dismissed:dismissed];
 }
 
 - (void)lew_dismissPopupViewWithanimation:(id<LewPopupAnimation>)animation{
@@ -84,7 +93,7 @@
 }
 #pragma mark - view handle
 
-- (void)presentPopupView:(UIView*)popupView animation:(id<LewPopupAnimation>)animation dismissed:(void(^)(void))dismissed{
+- (void)presentPopupView:(UIView*)popupView animation:(id<LewPopupAnimation>)animation backgroundClickable:(BOOL)clickable dismissed:(void(^)(void))dismissed{
 
     
     // check if source view controller is not in destination
@@ -127,8 +136,10 @@
         [overlayView addSubview:backgroundView];
         
         // Make the Background Clickable
-        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(lew_dismissPopupView)];
-        [backgroundView addGestureRecognizer:tap];
+        if (clickable) {
+            UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(lew_dismissPopupView)];
+            [backgroundView addGestureRecognizer:tap];
+        }
         self.lewOverlayView = overlayView;
     }
     

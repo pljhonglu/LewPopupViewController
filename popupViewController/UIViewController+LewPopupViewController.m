@@ -37,27 +37,27 @@
 #pragma public method
 
 - (void)lew_presentPopupView:(UIView *)popupView animation:(id<LewPopupAnimation>)animation{
-    [self presentPopupView:popupView animation:animation backgroundClickable:YES dismissed:nil];
+    [self _presentPopupView:popupView animation:animation backgroundClickable:YES dismissed:nil];
 }
 
 - (void)lew_presentPopupView:(UIView *)popupView animation:(id<LewPopupAnimation>)animation dismissed:(void (^)(void))dismissed{
-    [self presentPopupView:popupView animation:animation backgroundClickable:YES dismissed:dismissed];
+    [self _presentPopupView:popupView animation:animation backgroundClickable:YES dismissed:dismissed];
 }
 
 - (void)lew_presentPopupView:(UIView *)popupView animation:(id<LewPopupAnimation>)animation backgroundClickable:(BOOL)clickable{
-    [self presentPopupView:popupView animation:animation backgroundClickable:clickable dismissed:nil];
+    [self _presentPopupView:popupView animation:animation backgroundClickable:clickable dismissed:nil];
 }
 
 - (void)lew_presentPopupView:(UIView *)popupView animation:(id<LewPopupAnimation>)animation backgroundClickable:(BOOL)clickable dismissed:(void (^)(void))dismissed{
-    [self presentPopupView:popupView animation:animation backgroundClickable:clickable dismissed:dismissed];
+    [self _presentPopupView:popupView animation:animation backgroundClickable:clickable dismissed:dismissed];
 }
 
 - (void)lew_dismissPopupViewWithanimation:(id<LewPopupAnimation>)animation{
-    [self dismissPopupViewWithAnimation:animation];
+    [self _dismissPopupViewWithAnimation:animation];
 }
 
 - (void)lew_dismissPopupView{
-    [self dismissPopupViewWithAnimation:self.lewPopupAnimation];
+    [self _dismissPopupViewWithAnimation:self.lewPopupAnimation];
 }
 #pragma mark - inline property
 - (UIView *)lewPopupView {
@@ -93,7 +93,7 @@
 }
 #pragma mark - view handle
 
-- (void)presentPopupView:(UIView*)popupView animation:(id<LewPopupAnimation>)animation backgroundClickable:(BOOL)clickable dismissed:(void(^)(void))dismissed{
+- (void)_presentPopupView:(UIView*)popupView animation:(id<LewPopupAnimation>)animation backgroundClickable:(BOOL)clickable dismissed:(void(^)(void))dismissed{
 
     
     // check if source view controller is not in destination
@@ -101,7 +101,7 @@
     
     // fix issue #2
     if (self.lewOverlayView && self.lewOverlayView.subviews.count > 1) {
-        [self dismissPopupViewWithAnimation:nil];
+        [self _dismissPopupViewWithAnimation:nil];
     }
     
     self.lewPopupView = nil;
@@ -109,7 +109,7 @@
     self.lewPopupAnimation = nil;
     self.lewPopupAnimation = animation;
     
-    UIView *sourceView = [self topView];
+    UIView *sourceView = [self _lew_topView];
 
     // customize popupView
     popupView.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleLeftMargin |UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleRightMargin;
@@ -156,7 +156,7 @@
 
 }
 
-- (void)dismissPopupViewWithAnimation:(id<LewPopupAnimation>)animation{
+- (void)_dismissPopupViewWithAnimation:(id<LewPopupAnimation>)animation{
     if (animation) {
         [animation dismissView:self.lewPopupView overlayView:self.lewOverlayView completion:^(void) {
             [self.lewOverlayView removeFromSuperview];
@@ -184,7 +184,7 @@
     }
 }
 
--(UIView*)topView {
+-(UIView*)_lew_topView {
     UIViewController *recentView = self;
     
     while (recentView.parentViewController != nil) {
